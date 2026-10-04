@@ -2,8 +2,8 @@
 Adjust the COLS mapping to match the column names in your raw file."""
 import pandas as pd
 
-RAW = "data/raw/swiggy_raw.csv"
-OUT = "data/cleaned/swiggy_cleaned.csv"
+RAW = "swiggy_raw.csv"
+OUT = "swiggy_cleaned.csv"
 
 # Left: name used below | Right: name in YOUR raw file (edit these)
 COLS = {

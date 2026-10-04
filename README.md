@@ -15,7 +15,7 @@ The project answers:
 5. How concentrated is revenue in the top 10% of customers?
 
 ## 2. Dataset
-- Source: Swiggy restaurant / order / user dataset  (ADD LINK HERE)
+- Source: Swiggy restaurant / order / user dataset used in the Power BI project
 - Coverage: about 149K records, 821 cities, years 2017-2020
 - Key fields: City, Restaurant Name, Cuisine, Rating, Rating Count, Price,
   Veg/Non-Veg, Sales (Amount), Quantity, Year, User Age, Gender,
@@ -55,26 +55,24 @@ Raw data -> Cleaning -> EDA -> SQL/Python analysis -> Power BI -> Insights
 4. Expand partnerships in high-sales cities (Tirupati, Raipur, Bangalore).
 5. Investigate the post-2018 decline before scaling marketing spend.
 
-## 8. Repository Structure
+## 8. Repository Contents
 ```
 swiggy-analytics/
-|-- data/
-|   |-- raw/                 original dataset
-|   |-- cleaned/             cleaned dataset (CSV)
-|-- notebooks/               EDA notebook
-|-- sql/                     analysis queries
-|-- python/                  clean_and_eda.py
-|-- powerbi/                 swiggy_project.pbix
-|-- screenshots/             dashboard pages (PNG)
-|-- reports/                 final PDF report
-|-- README.md
+|-- README.md                           project overview
+|-- Swiggy_Analytics_Project_Report.pdf full business report
+|-- clean_and_eda.py                    data cleaning and EDA (Python)
+|-- analysis.sql                        analysis queries (SQL)
+|-- screenshots (PNG)                   5 Power BI dashboard pages
 ```
+Power BI file: swiggy project.pbix (submitted with the report; not stored
+here because of its file size).
 
 ## 9. How to Run
-1. Place the raw file in data/raw/.
-2. Run: python python/clean_and_eda.py
-3. Load the cleaned CSV into your SQL database and run sql/analysis.sql.
-4. Open powerbi/swiggy_project.pbix and refresh the data source.
+1. Put the raw dataset in the same folder as clean_and_eda.py and set the
+   file name and column names at the top of the script.
+2. Run: python clean_and_eda.py  (creates the cleaned CSV)
+3. Load the cleaned CSV into a SQL database and run analysis.sql.
+4. Open swiggy project.pbix in Power BI Desktop and refresh the data source.
 
 ## 10. Author
 Akshara Deshmukh - Data Analyst Intern, Davine Technologies
